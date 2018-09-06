@@ -1,3 +1,6 @@
+mod cmd;
+
 fn main() {
-    println!("Hello, world!");
+    let hello = cmd::run("echo hello".to_string()).unwrap();
+    println!("{}", hello);
 }
